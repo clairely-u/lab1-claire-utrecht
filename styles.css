@@ -1,6 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f9fafc;
+    height:200vh;
     
 }
 
@@ -19,8 +20,8 @@ button {
 }
 
 #footerlinks {
-    float: right;
-    text-align: right;
+   display:flex;
+   justify-content: flex-end;
 }
 
 .navigation {
@@ -32,6 +33,7 @@ button {
 }
 
 a {
+    padding: 5px;
     color:#69696a;
 }
 
@@ -47,15 +49,77 @@ p {
     font-size: 90%;
 }
 
-.hiring {
-    
-}
-
 .footer {
     text-decoration: none;
     width:100%;
     background-color: rgba(247, 193, 162, 0.7);
     display: flex;
     position:fixed;
+    justify-content: space-between;
     bottom: 0px;
+    left:0px;
+}
+
+@media only screen and (min-width:768px) {
+    header {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation {
+        display:flex;
+        flex-direction: row;
+        margin-right: 0px;
+    }
+
+    span {
+        padding: 5px;
+    }
+
+    #hireus {
+        width: 75px;
+    }
+
+    p {
+        width: 50%;
+    }
+
+    #callToAction {
+        width: 50%;
+    }
+
+    .circleBox {
+        float:right;
+        display: block;
+    }
+
+    .dot1 {
+        height: 155px;
+        width: 155px;
+        transform: translateY(-150px) translateX(90px);
+        background-color: rgba(247, 136, 167, 0.6);
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+.dot2 {
+    height: 110px;
+    width: 110px;
+    transform: translateY(-100px) translateX(10px);
+    background-color:rgba(247, 193, 162, 0.7);
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 1000; 
+  }
+
+.dot3 {
+    height: 75px;
+    width: 75px;
+    transform: translateY(-187px) translateX(-68px);
+    background-color: rgba(207, 130, 213, 0.6);
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 1;
+  }
 }
